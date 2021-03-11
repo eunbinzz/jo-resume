@@ -1,0 +1,202 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Noto+Serif+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+
+.row {max-width: 1000px; padding: 0 10px; margin: 2px auto 0px;}
+body {font-family: 'Bodoni Moda', serif; font-family: 'Noto Serif KR', serif;}
+* {outline: none; }
+
+/* #wrap .main {background: url(../img/bg.jpg); no-repeat center; background-size: cover;  height: 100vh;} */
+
+
+/* header구역 */
+        /* #header .slide { position: relative;} */
+#header {background :#ddd; font-size: 17px; padding: 2px 0; color: #000; height: 4vh;}
+#header .sns {float: right; margin-bottom: 1.5px;}
+#header .sns a {padding: 20px;}
+#header .sns a:hover {color:forestgreen; font-weight: bold;}
+
+
+/* section: intro부분 */
+       /* #intro .nav {bottom: 60%; } */
+#intro .nav > ul {text-align: center;}
+#intro .nav > ul > li {display: inline-block; font-weight: 500;}
+#intro .nav > ul > li.on > a {color: forestgreen; font-weight: 800; border-top: 3px solid forestgreen;
+                              display: inline-block; padding: 2px 5px 0;}
+#intro .nav > ul > li > a {position: relative; margin: 0 18px; font-size: 15px;}
+#intro .nav > ul > li:hover > a {color: forestgreen; font-weight: 800;}
+
+        /* slide_group1부분 */
+#total {height: 96vh;}
+.slide_outer1 {height: 80vh; position: relative; background: url(../img/bg_panel.jpg) 50% 0 no-repeat;
+               margin: 0 auto;}
+.slide_group1 .slide {height: 100%; margin: 0 220px; margin-top: 15px;}
+        /* background-repeat: no-repeat; background-position: center;background-size: cover; */
+.slide_group1 {height: 100%;}
+.slide_group2 {height: 100%;}
+.slick-list {height: 100%;}
+.slick-track {height: 100%;}
+
+.slide_group1 .slick-arrow {font-size: 70px; color: #333; background: none; border: none;
+                            position: absolute; top:50%; transform: translateY(-50%); font-weight: 200;}
+.slide_group1 .prev {left: 10%; z-index: 999 }    
+.slide_group1 .next {right: 10% }
+.slide_group1 .slick-dots li {position: relative;}  
+.slide_group1 .slick-dots li button {width: 0%; height:0; text-indent: -99999px;
+                                    overflow: hidden;  position: absolute; top: 0; left: 0;}
+.slide2 {position: relative;}                                   
+.slide2 .infobox {position: absolute; top: 3%; left: 130px; right: 130px; bottom: 11%; }
+                        /* ; border: 1px solid red */
+.slide2 .cardbox {position: absolute; width: 100%; top:2%; padding: 0 50px; }
+                        /* border: 2px solid #00512f ; */
+.slide2 .cardbox > div img {float: left; width: 140px; padding-top: 10px; padding-left: 13px;}
+.slide2 .cardbox .cardtxt {float: right; width: 75%; 
+                           font-size: 17px; line-height: 1.5; }
+.slide2 .cardbox .cardtxt li {border-bottom: 2px solid #000 ; margin: 3px 0 0 110px; font-size: 16px;
+                              letter-spacing: 2px; font-weight: 500;}
+.slide2 .cardbox .cardtxt li span {font-size: 18px; font-weight: 700;}                                           
+.slide2 .cardbox .cardtxt li:nth-child(1) {font-size: 23px; font-weight: bold; letter-spacing: 3px; }
+.slide2 .cardbox .cardtxt li:hover a {color: forestgreen; font-weight: 600;}
+.slide2 .listbox {position: absolute; width: 100%; bottom: 2%; padding: 0 20px;
+                  word-break: keep-all; overflow: hidden; text-overflow: ellipsis;}
+                  /*  border: 2px solid blue;  */
+.slide2 .listbox ul li {float: left; width: 23%; margin-right: 1%; margin-left: 1%; text-align: center;}
+.slide2 .listbox ul li > div {border: 4px solid #000; width: 100%; height: 240px; position: relative;; 
+                              margin-top: 30px; border-radius: 10px; cursor: pointer;
+                              transition: all 0.4s; overflow: hidden; }
+.listbox ul li > div::before {content: ''; top:0 ; left: 0; bottom: 0; right: 0; position: absolute; 
+                              background: rgba(0, 0, 0, 0.2); opacity: 0;}
+.listbox ul li > div:hover::before {opacity: 1; z-index: 9;} 
+.listbox ul li:nth-child(3) > div::before {display: none;}
+.listbox ul li:nth-child(3) > div:hover::before {opacity: 1; z-index: 9;} 
+.slide2 .listbox ul li p {font-size: 20px; padding: 10px; font-weight: bold;}
+.slide2 .listbox ul li:nth-child(3) > div {position: relative;}
+.slide2 .listbox ul li:nth-child(3) .download {position: absolute; top:50%; left: 50%; 
+                                                transform: translate(-50%, -50%);}
+.slide2 .listbox ul li:nth-child(3) .download p:nth-child(1) {border: 1px solid #000; font-size: 14px; margin-bottom: 10px;  
+                                                              padding: 5px 13px; border-radius: 5px; }
+                                                              /* opacity: 0; transition: all 0.4s 0.2s;  */
+.slide2 .listbox ul li:nth-child(3) .download p:nth-child(2) {border: 1px solid #000; font-size: 14px; border-radius: 5px;
+                                                              padding: 5px 13px;} 
+.slide2 .listbox ul li .download p:nth-child(1):hover,
+.slide2 .listbox ul li .download p:nth-child(2):hover  {background: forestgreen; color: #fff; opacity: 1; z-index: 10;}
+.slide2 .listbox ul li:nth-child(1) img, .slide_outer .slide2 .listbox ul li:nth-child(2) img, 
+.slide2 .listbox ul li:nth-child(4) img {width: 100%; height: 100%;}
+.slide2 .listbox ul li:nth-child(4) {margin-right: 0;}
+
+
+        /* slide_group2부분 */
+.slide_outer2 {height: 16vh; position: relative; background: rgba(0,0,0,0.6); border-top: 5px solid #333;}
+.slide_group2 {margin: 0 250px; background: #222;}
+.slide_group2 .slide {padding: 10px 25px;}
+.slide_group2 img {border: 1px solid #000; margin: 0 auto;}
+
+                            
+
+/* section: aboutme부분 */
+#aboutme  {height: 100vh; background: url(../img/bg_paper2.png) no-repeat center;
+           position: relative; word-break: keep-all; overflow: hidden; text-overflow: ellipsis;}
+.aboutmecontainer {text-align: center; font-size: 22px ; padding-top: 15px;
+                   position: absolute; top: 3%; left: 14%; right: 14%; bottom: 11%;}
+                   /* border: 1px solid red   */
+.aboutmecontainer .about { float: left; width: 100%; padding: 0 20px; }
+                /* ;border: 1px solid red;} */
+/* .aboutmecontainer .about {width:100%; height: 100%; padding:0 20px; margin-right: 4px;} */
+.aboutmecontainer .itsme1 {border: 3px solid #000; border-radius: 10px;  margin-right: 20px;
+                           display: inline-block; width: 40%; vertical-align: top;}
+.aboutmecontainer .itsme2 {border:3px solid #000; border-radius: 10px;
+                           display: inline-block; width: 56%; vertical-align: top;}
+.about h1 {padding: 15px 0; width: 100%; background: #000; color: #fff; font-weight: bold; 
+           letter-spacing: 10px; font-size: 38px; margin-top: 50px; margin-bottom: 70px;}
+.about h2 {padding: 15px; font-size: 33px; font-weight: bold; 
+            letter-spacing: 5px; border-bottom: 2px solid #000;}
+.history table thead tr {border-bottom: 1px solid #555;}
+.history table thead tr > th {font-weight: 700}
+.history col:nth-child(1) {width: 160px}
+.history col:nth-child(2) {width: auto}
+         /* .history thead > tr td {font: 60px; font-weight: bold;} */
+.history tr td {font-size: 17px;}
+.history table td, .history table th {padding: 10px 5px;}
+.history table td {font-weight: 600}
+        /* .history table td {text-align: left;} */
+.itsme1 .certificate ul {font-size: 17px; font-weight: 600}
+.itsme1 .certificate ul li {padding: 10px 5px;}
+
+
+/* section skills부분 */
+#skills  {height: 100vh; background: url(../img/bg_paper2.png) no-repeat center;
+          position: relative;}
+.skillcontainer {text-align: center; font-size: 22px ; padding-top: 15px;
+                position: absolute; top: 3%; left: 14%; right: 14%; bottom: 11%;}  
+                /* border: 1px solid red  */
+/* .skillcontainer {text-align: center; font-size: 22px ; font-weight: bold; margin: 0 220px; } */
+.skillcontainer .graph {height: 100%; bottom: 0; }
+                            /* border: 1px solid red;  */
+.skillcontainer .graph > div {display: inline-block; width: 14%; height: 80%; margin-top: 50px;}
+                    /*  border: 1px solid greenyellow;  */
+.skillcontainer .score {height: 100%; position: relative; }
+.skillcontainer .myscore {position: absolute; bottom: 10px; width: 50%; left: 50%; transform: translate(-50%);
+                          font-size: 17px; padding-top: 10px;}
+.skillcontainer .html .myscore {height: 0; background: greenyellow;}
+/* .skillcontainer.on .html .myscore {animation: htmlani 1s both 0s;} */
+.skillcontainer .css .myscore {height: 0; background:lime;}
+/* .skillcontainer.on .css .myscore {animation: cssani 1s both 0.5s;} */
+.skillcontainer .script .myscore {height: 0; background: limegreen;}
+/* .skillcontainer.on .script .myscore {animation: scriptani 1s both 1s;} */
+.skillcontainer .jquery .myscore {height: 0; background: yellowgreen;}
+/* .skillcontainer.on .jquery .myscore {animation: jqueryani 1s both 1.5s;} */
+.skillcontainer .photoshop .myscore {height: 0; background:darkgreen;}
+/* .skillcontainer.on .photoshop .myscore {animation: photoani 1s both 2.5s;} */
+.skillcontainer .illustrator .myscore {height: 0; background: forestgreen;}
+/* .skillcontainer.on .react .myscore {animation: illuani 1s both 2s;} */
+/* @keyframes htmlani {0% {height: 0; opacity: 0;} 100% {height: 90%; opacity: 1;}}
+@keyframes cssani {0% {height: 0; opacity: 0;} 100% {height: 80%; opacity: 1;}}
+@keyframes scriptani {0% {height: 0; opacity: 0;} 100% {height: 70%; opacity: 1;}}
+@keyframes jqueryani {0% {height: 0; opacity: 0;} 100% {height: 60%; opacity: 1;}}
+@keyframes photoani {0% {height: 0; opacity: 0;} 100% {height: 40%; opacity: 1;}}
+@keyframes illuani {0% {height: 0; opacity: 0;} 100% {height: 50%; opacity: 1;}}
+ */
+
+/* section: please부분 */
+#please {height: 100vh; background: url(../img/bg_paper2.png) no-repeat center;
+        position: relative;}
+.plzcontainer {text-align: center; font-size: 22px ; padding-top: 15px;
+              position: absolute; top: 3%; left: 14%; right: 14%; bottom: 11%;} 
+                      /* border: 1px solid red */
+.contact .form1 {margin: 10px 70px; border: 3px solid #000; height: 60%; border-radius: 10px;}      
+.contact .form1 fieldset {margin: 10px 20px;}          
+.contact .form1 p {padding: 15px 0; text-align: left;}
+.contact .form1 label {width: 200px; display: inline-block; font-size: 22px; font-weight: bold; }
+.contact .form1 input {border: 1px solid #333; padding: 10px 5px; vertical-align: middle;}
+.contact .form1 #message {width: calc(80% - 200px); height: 130px; text-align: left; 
+                          vertical-align: top; border: 1px solid #333}
+.contact .form1 p:nth-of-type(4) > label {vertical-align: top;}
+.contact .form1 input[type=file] {border: none;}
+.contact .form1 p:nth-of-type(6) {text-align: center; margin-top: 10px;}
+.contact .form1 p:nth-of-type(6) button {padding: 12px 25px; font-size: 20px; border-radius: 10px; margin: 0 10px;
+                                         color:#fff; font-family: 'Bodoni Moda', serif;}
+.contact .form1 P:nth-of-type(6) button[type=submit] {background: #777;}
+.contact .form1 P:nth-of-type(6) button[type=submit]:hover {background :forestgreen}
+.contact .form1 P:nth-of-type(6) button[type=reset] {background: #777; cursor: pointer;}
+.contact .form1 P:nth-of-type(6) button[type=reset]:hover {background: forestgreen}
+.contact > p {font-size: 50px; font-weight: 700; text-align: right; padding-top: 7px; 
+              padding-right: 10px; font-family: 'Cedarville Cursive', cursive;}
+.contact ::placeholder {color: #222; font-family: 'Noto Serif KR', serif; font-size: 14px;}
+    
+
+/* footer부분 */
+footer {background: #ddd; padding: 10px 0; text-align: center; font-size: 12px;
+        line-height: 12px; color: #000; font-weight: 600;}
+
+        
+/* gotop부분 */
+.gotop {position: fixed; bottom: 10%; right: 5%; transition: all 0.5s;
+        color: #fff; background-color: rgba(0,0,0,0.7);
+        width: 42px; height: 42px; text-align: center; border-radius: 10px;
+        line-height: 42px; opacity: 0;}
+.gotop.on {opacity: 1}
+.gotop a {display: block}
+.gotop a:hover {background: forestgreen; border-radius: 10px;}
+

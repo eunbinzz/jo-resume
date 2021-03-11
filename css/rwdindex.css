@@ -1,0 +1,115 @@
+@media screen and (max-width: 1355px) {
+    .plzcontainer {text-align: center; font-size: 22px ; padding-top: 10px;
+        position: absolute; top: 3%; left: 13%; right: 13%; bottom: 11%; 
+                border: 1px solid red}
+    .contact .form1 fieldset {margin: 5px 10px;}   
+    .contact .form1 {margin: 70px 10px; border: 3px solid #000; height: 60%; border-radius: 10px;}
+    .contact .form1 label {width: 150px; display: inline-block; font-size: 22px; font-weight: bold; }
+    .contact .form1 #message {width: calc(80% - 200px); height: 100px; text-align: left; 
+                              vertical-align: top; border: 1px solid #333}
+    .contact .form1 p:nth-of-type(6) button {padding: 8px 21px; font-size: 20px; border-radius: 10px; margin: 0 10px;
+                                            color:#fff; font-family: 'Bodoni Moda', serif;}
+    .contact .form1 p {padding: 13px 0; text-align: left;}
+
+
+
+
+}   /* 전체 괄호*/
+
+@media screen and (max-width: 1200px) {
+    #aboutme {height: 100vh;  background: url(../img/bg_panel.jpg) 50% 50% no-repeat;
+               margin: 0 auto; position: relative; 
+               word-break: keep-all; overflow: hidden; text-overflow: ellipsis;}
+    .aboutmecontainer {text-align: center; font-size: 22px ; padding-top: 15px;
+                       position: absolute; top: 3%; left: 1%; right: 1%; bottom: 11%; 
+                       border: 1px solid red; margin: 80px 130px 30px}  
+    .about h1 {padding: 15px 0; width: 100%; background: #000; color: #fff; font-weight: bold; 
+                letter-spacing: 10px; font-size: 35px; margin-top: 10px; margin-bottom: 25px;}
+    .about h2 {padding: 10px; font-size: 27px; font-weight: bold; 
+                letter-spacing: 5px; border-bottom: 2px solid #000;}
+    .history table thead tr > th {font-weight: 700; font-size: 18px;}
+    .history table td, .history table th {padding: 8px 5px;}
+    .itsme1 .certificate ul li {padding: 8px 5px;}
+    .aboutmecontainer .itsme1 {border: 3px solid #000; border-radius: 10px;  margin-right: 20px;  margin-bottom: 20px;
+                               display: inline-block; width: 36%; vertical-align: top;}
+    .aboutmecontainer .itsme2 {border: 3px solid #000; border-radius: 10px;
+                               display: inline-block; width: 59%; vertical-align: top;}
+    .history col:nth-child(1) {width: 150px}
+
+    #skills  {height: 100vh; background: url(../img/bg_panel.jpg) 50% 50% no-repeat;
+            margin: 0 auto; position: relative;}
+       
+    #please {height: 100vh; background: url(../img/bg_panel.jpg) 50% 50% no-repeat;
+                margin: 0 auto; position: relative;}
+    .plzcontainer {text-align: center; font-size: 22px ; padding-top: 10px;
+        position: absolute; top: 3%; left: 10%; right: 10%; bottom: 11%; 
+                border: 1px solid red}
+
+
+    .contact .form1 {margin: 110px 27px; border: 3px solid #000; height: 60%; border-radius: 10px;}
+    .contact .form1 label {width: 150px; display: inline-block; font-size: 18px; font-weight: bold; }
+    .contact .form1 #message {width: calc(80% - 200px); height: 80px; text-align: left; 
+                              vertical-align: top; border: 1px solid #333}
+    .contact .form1 p:nth-of-type(6) button {padding: 5px 15px; font-size: 18px; border-radius: 10px; margin: 0 10px;
+                                            color:#fff; font-family: 'Bodoni Moda', serif;}
+    .contact .form1 p {padding: 5px 0; text-align: left;}
+
+         
+
+
+
+
+
+}   /* 전체 괄호*/
+
+
+
+@media screen and (max-width: 1024px) {
+    .slide_group1 .slide {height: 100%; margin: 0 100px; margin-top: 15px;}
+    .slide2 .infobox {position: absolute; top: 3%; left:0; right:0; bottom: 11%; 
+                      border: 1px solid red }
+    .slide2 .cardbox > div img {float: left; width: 140px; padding-top: 10px; padding-left: 13px;}
+    .slide2 .cardbox .cardtxt {float: right; width: 75%; font-size: 17px; line-height: 1.5; }
+    .slide2 .cardbox {position: absolute; width: 100%; top:2%; padding: 0 80px; border: 2px solid #00512f}
+    .slide2 .listbox {position: absolute; width: 100%; bottom: 2%; padding: 0 20px; border: 2px solid blue; 
+                        word-break: keep-all; overflow: hidden; text-overflow: ellipsis;}
+    .aboutmecontainer {text-align: center; font-size: 22px ; padding-top: 15px;
+                       position: absolute; top: 3%; left: 1%; right: 1%; bottom: 11%; 
+                       border: 1px solid red; margin: 80px 70px 30px}  
+    .about h2 {padding: 10px; font-size: 25px; font-weight: bold; 
+                letter-spacing: 3px; border-bottom: 2px solid #000;}
+    .aboutmecontainer .itsme1 {border: 3px solid #000; border-radius: 10px;  margin-right: 20px;  margin-bottom: 20px;
+                               display: inline-block; width: 36%; vertical-align: top;}
+    .aboutmecontainer .itsme2 {border: 3px solid #000; border-radius: 10px;
+                               display: inline-block; width: 59%; vertical-align: top;}
+    .history tr td {font-size: 16px;}
+    .itsme1 .certificate ul {font-size: 15px; font-weight: 600}
+    .history table td, .history table th {padding: 6px 5px;}
+    .itsme1 .certificate ul li {padding: 6px 5px;}
+    .contact > p {font-size: 50px; font-weight: 700; text-align: right; padding-top: 0px; 
+                  padding-right: 10px; font-family: 'Cedarville Cursive', cursive;}
+    .skillcontainer {text-align: center; font-size: 20px ; padding-top: 15px;
+        position: absolute; top: 3%; left: 8%; right: 8%; bottom: 11%; 
+                border: 1px solid red} 
+
+
+
+
+
+
+}   /* 전체괄호 */
+
+
+
+
+
+@media screen and (max-width: 768px) {
+     
+
+
+
+
+
+}   /* 전체 괄호 */
+
+
